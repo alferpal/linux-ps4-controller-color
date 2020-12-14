@@ -1,0 +1,62 @@
+{
+  "name": "@alferpal/change-this-please",
+  "version": "1.0.0",
+  "description": "change-this-please",
+  "scripts": {
+    "build": "tsc --build tsconfig-src.json",
+    "clean": "rimraf dist",
+    "commit": "git-cz",
+    "lint": "eslint --ext .ts src",
+    "prebuild": "npm-run-all -p clean lint",
+    "prerelease": "npm t",
+    "prestart": "npm run build",
+    "pretest": "npm run build",
+    "release": "standard-version -s",
+    "start": "",
+    "test": "jest",
+    "updateCOC": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): updated CODE_OF_CONDUCT.md'",
+    "updateContrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alferpal/change-this-please.git"
+  },
+  "homepage": "https://github.com/alferpal/change-this-please",
+  "bugs": "https://github.com/alferpal/change-this-please/issues",
+  "keywords": [],
+  "author": {
+    "email": "alferpal@gmail.com",
+    "name": "Alex Ferrando",
+    "twitter": "alferpal",
+    "url": "https://github.com/alferpal"
+  },
+  "license": "Parity-7.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "~26.0.19",
+    "@typescript-eslint/eslint-plugin": "~1.13.0",
+    "@typescript-eslint/parser": "~1.13.0",
+    "commitizen": "~4.2.2",
+    "concurrently": "~5.3.0",
+    "cz-conventional-changelog": "~3.3.0",
+    "eslint": "~7.15.0",
+    "eslint-config-airbnb-typescript": "~6.2.0",
+    "eslint-plugin-import": "~2.22.1",
+    "husky": "~4.3.6",
+    "jest": "~25.5.4",
+    "npm-run-all": "~4.1.5",
+    "onchange": "~7.1.0",
+    "rimraf": "~3.0.2",
+    "standard-version": "~9.0.0",
+    "ts-jest": "~25.5.1",
+    "typescript": "~3.9.7",
+    "weallbehave": "~1.2.0",
+    "weallcontribute": "~1.0.9"
+  },
+  "private": true,
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
