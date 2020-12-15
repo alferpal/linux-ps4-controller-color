@@ -16,7 +16,7 @@ Got bored one day and decided to write this so I could change the color of the l
 
 ## Usage
 
-```shell
+```
 Usage: ps4-controller-color <command> [options]
 
 Commands:
