@@ -5,9 +5,15 @@ HUGE WARNING: this is highly experimental, have only tried in my computer and ne
 
 I take no responsability in what happens if you use this.
 ## What
-Got bored one day and decided to see if I could change the color of the leds in the PS4 handlers I use for playing games on my Linux laptop. Turns out you can by, as it tends to be the case in Linux, just writing values in files.
+Turns out you can change the color of the LED in the back of a PS4 controller by, as it tends to be the case with everything in Linux, just writing values in files.
 
 This CLI does that.
+
+## Why
+![](https://i.giphy.com/media/s239QJIh56sRW/giphy.webp)
+
+Got bored one day and decided to write this so I could change the color of the leds in the PS4 handlers I use for playing games on my Linux laptop. 
+
 ## Usage
 
 ```shell
