@@ -3,34 +3,32 @@
     "node": true
   },
   "extends": [
-    "airbnb-typescript/base"
+    "airbnb-base",
+    "plugin:jest/all",
+    "plugin:node/recommended"
   ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": 2019,
-    "sourceType": "module"
-  },
   "plugins": [
-    "@typescript-eslint/eslint-plugin"
+    "jest",
+    "node"
   ],
   "rules": {
-    "@typescript-eslint/semi": [
-      "error",
-      "never"
-    ],
-    "import/no-unresolved": "off",
-    "import/prefer-default-export": "off",
     "no-multiple-empty-lines": [
       "error",
       {
         "max": 1
       }
     ],
+    "no-process-exit": "off",
+    "no-return-await": "off",
     "no-use-before-define": [
       "error",
       {
         "functions": false
       }
     ],
+    "semi": [
+      "error",
+      "never"
+    ]
   }
 }
