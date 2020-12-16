@@ -1,5 +1,7 @@
 # @alferpal/linux-ps4-controller-color
 
+( Archived because I don't want dependabot or anything like that passing through here. If you have any questions, send me an email or find me on twitter. )
+
 ## Caveats
 HUGE WARNING: this is highly experimental, have only tried in my computer and needs root for setting the colors.
 
